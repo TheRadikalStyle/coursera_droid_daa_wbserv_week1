@@ -1,13 +1,9 @@
-# coursera_droid_daa_week4
+# coursera_droid_daa_week5
 
-Proyecto de semana 4 "Menús y Fragments"
+Proyecto de semana 5 "Persistencia"
 
 Evaluacion de:
 
-1.- Que tu aplicación muestre los dos menús solicitados
-2.- Que ambos menús funcionen correctamente
-3.- Libreria JavaMail
-4.- Que corra la aplicación
-5.- View Pager
-6.- Modularizacion en Fragments
-7.- Librería implementada
+1.- Pantallazos de la aplicación
+2.- Modelo de base de datos
+3.- Enlace al proyecto en GitHub

@@ -4,7 +4,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.theradikalsoftware.week4.AcercadeFragment">
+    tools:context="com.theradikalsoftware.week5.AcercadeFragment">
 
     <TextView
         android:id="@+id/frag_acercade_textview_devname"

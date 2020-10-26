@@ -1,10 +1,8 @@
-package com.theradikalsoftware.week4;
+package com.theradikalsoftware.week5;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.MenuItem;
 
 public class AcercaDeActivity extends AppCompatActivity {
 

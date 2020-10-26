@@ -1,4 +1,4 @@
-package com.theradikalsoftware.week4.fragments;
+package com.theradikalsoftware.week5.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,8 +10,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.theradikalsoftware.week4.MascotasAdapter;
-import com.theradikalsoftware.week4.R;
+import com.theradikalsoftware.week5.MascotasAdapter;
+import com.theradikalsoftware.week5.R;
 
 public class MascotasFragment extends Fragment {
     private  RecyclerView recyclerV;

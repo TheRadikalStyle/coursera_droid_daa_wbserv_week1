@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/material_grey_400"
     android:weightSum="5"
-    tools:context="com.theradikalsoftware.week4.ActivityContacto">
+    tools:context="com.theradikalsoftware.week5.ActivityContacto">
 
     <EditText
         android:id="@+id/frag_contacto_edittext_nombre"

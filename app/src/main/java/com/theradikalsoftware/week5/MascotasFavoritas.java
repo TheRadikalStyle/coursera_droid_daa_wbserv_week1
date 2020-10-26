@@ -1,4 +1,4 @@
-package com.theradikalsoftware.week4;
+package com.theradikalsoftware.week5;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;

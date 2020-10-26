@@ -1,4 +1,4 @@
-package com.theradikalsoftware.week4;
+package com.theradikalsoftware.week5;
 
 public class MascotasData {
     String nombre;

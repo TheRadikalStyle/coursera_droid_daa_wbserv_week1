@@ -1,14 +1,13 @@
-package com.theradikalsoftware.week4;
+package com.theradikalsoftware.week5;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
-import com.theradikalsoftware.week4.fragments.MascotasFragment;
-import com.theradikalsoftware.week4.fragments.ProfileFragment;
+import com.theradikalsoftware.week5.fragments.MascotasFragment;
+import com.theradikalsoftware.week5.fragments.ProfileFragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -16,7 +15,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.util.Log;
 import android.view.View;
 
 import android.view.Menu;
