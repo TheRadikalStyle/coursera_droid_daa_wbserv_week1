@@ -10,12 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.theradikalsoftware.week4.MascotasFavoritas"
-            android:label="@string/second_activity_name"
-            android:parentActivityName="com.theradikalsoftware.week4.MainActivity"
-            />
+            android:name=".ActivityContacto"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:name="com.theradikalsoftware.week4.MainActivity"
+            android:name=".AcercaDeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MascotasFavoritas"
+            android:label="@string/second_activity_name"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

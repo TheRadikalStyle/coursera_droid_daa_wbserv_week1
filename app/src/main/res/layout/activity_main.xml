@@ -18,6 +18,27 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/main_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/main_tab_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@mipmap/ic_home"
+                android:text="" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/main_tab_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@mipmap/ic_dog"
+                android:text="" />
+
+        </com.google.android.material.tabs.TabLayout>
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main" />

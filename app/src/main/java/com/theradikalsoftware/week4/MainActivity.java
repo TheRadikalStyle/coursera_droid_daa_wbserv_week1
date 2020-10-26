@@ -5,6 +5,10 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
+import com.theradikalsoftware.week4.fragments.MascotasFragment;
+import com.theradikalsoftware.week4.fragments.ProfileFragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -12,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.View;
 
 import android.view.Menu;
@@ -20,6 +25,9 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
     private final String FRAG_CONTACTO_TAG = "FRAG_CONTACTO";
     private final String FRAG_ACERCADE_TAG = "FRAG_ACERCADE";
+    private final String FRAG_FIRST_TAG = "FRAG_FIRST";
+    private final String FRAG_PROFILE_TAG = "FRAG_PROFILE";
+    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +35,35 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        tabLayout = findViewById(R.id.main_tab_layout);
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                switch (tab.getPosition()){
+                    case 0:
+                        FragmentChanger(new MascotasFragment(), FRAG_FIRST_TAG);
+                        tab.select();
+                        break;
+
+                    case 1:
+                        FragmentChanger(new ProfileFragment(), FRAG_PROFILE_TAG);
+                        tab.select();
+                        break;
+                    default:
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -37,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        FragmentChanger(new MascotasFragment(), FRAG_FIRST_TAG);
+        tabLayout.getTabAt(0).select();
     }
 
     @Override
@@ -54,13 +94,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_contacto) {
-            Fragment contactoFragment = ContactoFragment.newInstance();
-            FragmentChanger(contactoFragment, FRAG_CONTACTO_TAG);
+            startActivity(new Intent(this, ActivityContacto.class));
             return true;
         }
         if (id == R.id.action_acercade) {
-            Fragment acercadeFragment = AcercadeFragment.newInstance("David Ochoa Gutierrez", "@theradikalstyle");
-            FragmentChanger(acercadeFragment, FRAG_ACERCADE_TAG);
+            startActivity(new Intent(this, AcercaDeActivity.class));
             return true;
         }
 

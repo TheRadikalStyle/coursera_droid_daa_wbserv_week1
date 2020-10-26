@@ -1,4 +1,4 @@
-package com.theradikalsoftware.week4;
+package com.theradikalsoftware.week4.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class FirstFragment extends Fragment {
+import com.theradikalsoftware.week4.MascotasAdapter;
+import com.theradikalsoftware.week4.R;
+
+public class MascotasFragment extends Fragment {
     private  RecyclerView recyclerV;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -36,7 +39,5 @@ public class FirstFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-
     }
 }
