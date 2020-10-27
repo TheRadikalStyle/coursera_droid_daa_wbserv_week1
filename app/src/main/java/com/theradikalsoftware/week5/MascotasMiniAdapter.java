@@ -57,7 +57,7 @@ public class MascotasMiniAdapter extends RecyclerView.Adapter<MyMiniViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull MyMiniViewHolder holder, int position) {
-        holder.mascotaRankingTXV.setText(arrayMascotas.get(position).getRanking());
+        holder.mascotaRankingTXV.setText(String.valueOf(arrayMascotas.get(position).getRanking()));
     }
 
     @Override
