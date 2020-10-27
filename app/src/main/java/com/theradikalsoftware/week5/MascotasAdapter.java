@@ -55,6 +55,10 @@ public class MascotasAdapter extends RecyclerView.Adapter<MyViewHolder> {
         arrayMascotas.add(mascotasData);
     }
 
+    public MascotasAdapter(ArrayList list){
+        this.arrayMascotas = list;
+    }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
