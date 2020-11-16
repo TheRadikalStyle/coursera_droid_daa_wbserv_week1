@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">Semana 5</string>
+    <string name="app_name">WebServices Semana 1</string>
     <string name="action_contacto">Contacto</string>
     <string name="action_acercade">Acerca de</string>
+    <string name="action_setaccount">Configurar cuenta</string>
     <string name="action_favoritos">Favoritos</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="second_activity_name">Mascotas favoritas</string>
+    <string name="api_url">https://www.instagram.com/oauth/authorize?client_id=356159335809910&amp;redirect_uri=https://theradikalstyle.github.io/portfolio&amp;scope=user_profile,user_media&amp;response_type=code></string>
 </resources>

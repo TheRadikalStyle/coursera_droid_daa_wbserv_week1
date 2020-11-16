@@ -104,6 +104,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, MascotasFavoritas.class));
         }
 
+        if(id == R.id.action_setaccount){
+            startActivity(new Intent(this, ConfigurarCuentaActivity.class));
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
